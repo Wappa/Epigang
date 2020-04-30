@@ -30,3 +30,27 @@ def insert(x):
                 B.left = x
             else:
                 insert(B.left.key)
+
+"""
+test Balance Tree AVL
+"""
+
+    def Height(B):
+    if B is None:
+        return -1
+    return max(Height(B.left), Height(B.right))+1
+
+def __isbalanced(B):
+    """
+    retourne (la hauteur de l'arbre, booléen = est-ce que l'arbre est h-équilibré)
+    """
+    l = Height(B.left)
+    r = Height(B.right)
+    if abs(l - r) <= 1:
+        return True
+    else:
+        return False
+
+def isbalanced(B):
+    result = __isbalanced(B)
+    return result
