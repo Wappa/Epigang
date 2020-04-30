@@ -33,6 +33,7 @@ def insert(x):
 
 """
 test Balance Tree AVL
+Made by Me
 """
 
     def Height(B):
@@ -54,3 +55,24 @@ def __isbalanced(B):
 def isbalanced(B):
     result = __isbalanced(B)
     return result
+
+"""
+Correction
+"""
+
+def _isBalanced(B):
+    if B == None:
+        return (-1, True)
+    else:
+        (hl,test) = _isBalanced(B.left)
+#Optimization: no need to call on the right if testfailed on the left !
+        if not test:
+            return (0,False)
+        else:
+            (hr,test) = _isBalanced(B.right)
+            return (1+ max(hl,hr), test and abs(hl-hr) <2)
+
+def isBalanced(B):
+    (h,result) = _isBalanced(B)
+    return result
+    
