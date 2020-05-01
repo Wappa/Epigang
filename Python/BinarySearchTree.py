@@ -1,4 +1,4 @@
-"""
+ """
 This is my my repository for Homework/training in Python
 I Hope you will found it useful.
 
@@ -34,6 +34,7 @@ def insert(x):
 """
 test Balance Tree AVL
 Made by Me
+Not Working for specific arbre
 """
 
     def Height(B):
@@ -57,7 +58,7 @@ def isbalanced(B):
     return result
 
 """
-Correction
+Correction given by Moodle
 """
 
 def _isBalanced(B):
@@ -75,4 +76,3 @@ def _isBalanced(B):
 def isBalanced(B):
     (h,result) = _isBalanced(B)
     return result
-    
