@@ -56,4 +56,68 @@ namespace ElseIfStatement
   }
 }
 
+namespace SwitchStatement
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string genre = "Horror";
+      switch(genre)
+      {
+        case "Drama":
+        Console.WriteLine("Citizen Kane");
+        break;
+        case "Comedy":
+        Console.WriteLine("Duck Soup");
+        break;
+        case "Adventure":
+        Console.WriteLine("King Kong");
+        break;
+        case "Science Fiction":
+        Console.WriteLine("2001: A Space Odyssey");
+        break;
+        case "Horror":
+        Console.WriteLine("Psycho");
+        break;
+        default:
+        Console.WriteLine("No movie found");
+        break;
+      }
+    }
+  }
+}
+
+namespace TernaryOperator
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      int pepperLength = 4;
+      string message = (pepperLength >= 3.5) ? "ready!" : "wait a little longer";
+      Console.WriteLine(message);
+    }
+  }
+}
+namespace Review
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      /* use this space to write your own short program! 
+      Here's what you learned:
+
+      CONDITIONALS: if, if...else, else if
+      SWITCH STATEMENT: switch (condition)
+      TERNARY OPERATOR: (condition) ? true : false
+
+      Good luck! */
+
+
+    }
+  }
+}
+
 
