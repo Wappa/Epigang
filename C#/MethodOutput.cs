@@ -69,3 +69,77 @@ namespace OutParameters
     }
   }
 }
+
+namespace UsingOut
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+
+    }
+    static string Whisper(string weez,out bool flip)
+    {
+        flip = true;
+        return weez.ToLower();
+        string message = "AAAAAAAPERO";
+        Whisper(message, out bool flag);
+    }
+  }
+}
+
+namespace OutErrors
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      string statement = "GARRRR";
+      bool marker;
+      string murmur = Whisper(statement, out marker);
+      Console.WriteLine(murmur);
+    }
+
+    static string Whisper(string phrase, out bool wasWhisperCalled)
+    {
+      wasWhisperCalled = true;
+      return phrase.ToLower();
+    }
+ }
+}
+
+namespace ReviewMethodOutput
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      // Define variables
+      string destination = "Neptune";
+      string galaxyString = "8";
+      int galaxyInt;
+      string welcomeMessage;
+      bool outcome;
+
+      // Call DecoratePlanet() and TryParse() here
+
+      // Print results
+      Console.WriteLine(welcomeMessage);
+      Console.WriteLine($"Parsed to int? {outcome}: {galaxyInt}");
+
+    }
+
+    // Define a method that returns a string
+    static string DecoratePlanet(string planet)
+    {
+       return $"*..*..* Welcome to {planet} *..*..*";
+    }
+
+    // Define a method with out
+    static string Whisper(string phrase, out bool wasWhisperCalled)
+    {
+      wasWhisperCalled = true;
+      return phrase.ToLower();
+    }
+  }
+}
