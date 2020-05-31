@@ -122,6 +122,8 @@ namespace ReviewMethodOutput
       bool outcome;
 
       // Call DecoratePlanet() and TryParse() here
+      welcomeMessage = DecoratePlanet(destination);
+      outcome = Int32.TryParse(galaxyString, out galaxyInt);
 
       // Print results
       Console.WriteLine(welcomeMessage);
@@ -141,5 +143,5 @@ namespace ReviewMethodOutput
       wasWhisperCalled = true;
       return phrase.ToLower();
     }
-  }
+    }
 }
