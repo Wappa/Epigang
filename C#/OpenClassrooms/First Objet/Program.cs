@@ -7,9 +7,9 @@ namespace First_Objet
         static void Main(string[] args)
         {
             Voiture voitureNicolas = new Voiture();
-            voitureNicolas.Klaxonner();
-            voitureNicolas.Couleur = "rouge";
+            voitureNicolas.Rouler();
             voitureNicolas.Vitesse = 50;
+            voitureNicolas.Rouler();
         }
     }
     

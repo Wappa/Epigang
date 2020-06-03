@@ -19,6 +19,17 @@ namespace First_Objet
             set;
         }
 
+        public Voiture()
+        {
+            Vitesse = 5;
+        }
+        
+        
+        public void Rouler()
+        {
+            Console.WriteLine("Je roule à " + Vitesse + " km/h");
+        }
+
         public void Klaxonner()
         {
             if (!VitesseAutorisée(180))
