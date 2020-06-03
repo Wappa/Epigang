@@ -6,7 +6,7 @@ namespace First_Objet
     {
 
         public string couleur;
-        public int vitesse;
+        
         public string Couleur
         {
             get => couleur;
@@ -21,7 +21,7 @@ namespace First_Objet
 
         public Voiture()
         {
-            Vitesse = 5;
+            this.Vitesse = Vitesse;
         }
         
         
@@ -36,6 +36,12 @@ namespace First_Objet
             {
                 Console.WriteLine("Pouet !");
             }
+        }
+        
+        public void Accelerer(int acceleration)
+        {
+            this.Vitesse += acceleration;
+            this.Rouler();
         }
         
         public bool VitesseAutorisée(int vitesse)
