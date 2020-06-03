@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace First_Objet
 {
@@ -6,10 +7,19 @@ namespace First_Objet
     {
         static void Main(string[] args)
         {
-            Voiture voitureNicolas = new Voiture();
-            voitureNicolas.Rouler();
-            voitureNicolas.Vitesse = 50;
-            voitureNicolas.Rouler();
+            List<Animal> animaux = new List<Animal>();
+            Animal chien = new Chien("Bill");
+            Animal tom = new Chat("Tom");
+            Animal felix = new Chat("Félix");
+
+            animaux.Add(chien);
+            animaux.Add(tom);
+            animaux.Add(felix);
+
+            foreach (Animal animal in animaux)
+            {
+                animal.Respirer();
+            }
         }
     }
     
