@@ -1,0 +1,122 @@
+header{
+    background-image: url("../Img/banniere/paris.png");
+    background-size: cover;
+    width: auto;
+    height: 1100px;
+    
+    background-repeat: no-repeat;
+}
+#alex{
+    float: left;
+    width: 400px;
+    margin: 20px 80px;
+}
+#news{
+    float:right;
+    font-size: 24px;
+    margin: 50px 20px;
+    color: aliceblue;
+    border-bottom-color: brown;
+}
+.nav{
+    text-decoration: none;
+    color: aliceblue;
+    float: right;
+    font-size: 24px;
+    margin: 70px 40px;
+    
+}
+
+.bvn{
+    background-color: #1b1b18;
+    height: 200px;
+    text-align: center;
+    margin: 100px 0px;
+}
+#bvn{
+    font-size: 44px;
+}
+#passion{
+    color:#a2957f;
+}
+.moi{
+    background-color: #4b1c18;
+    height: 900px;
+}
+#apropos{
+    font-size: 40px;
+    text-align: center;
+    margin: 10px 200px;
+    
+}
+
+.descr{
+    margin: 50px 200px;
+    text-align: center;
+    font-size: 18px;
+}
+
+#hesite{
+    margin: 30px 200px;
+    float: none;
+    text-align: center;
+    font-size: 28px;
+}
+#asperge{
+    width: 600px;
+    float: left;
+}
+#contact{
+    color: white;
+    background-color: #3e8096;
+    float: right;
+    margin: 10px 550px;
+    font-size: 28px;
+}
+#contact:hover{
+    color: #3e8096;
+    background-color: black;
+    
+}
+footer{
+    height: 500px;
+    align-content: center;
+    align-items: center;
+    text-align-last: center;
+}
+.texta{
+    font-size: 20px;
+}
+
+#envoi{
+    color: aliceblue;
+    background-color: #3e8096;
+    font-size: 28px;
+    width: 150px;
+    margin: 20px 0px;
+}
+#envoi:hover{
+    color: #3e8096;
+    background-color: black;
+}
+
+#alexf{
+    float: left;
+    width: 200px;
+    margin: 70px 90px;
+}
+.navf{
+    text-decoration: none;
+    color: aliceblue;
+    float: right;
+    font-size: 14px;
+    margin: 70px 40px;
+    
+}
+#newsf{
+    float:right;
+    font-size: 14px;
+    margin: 70px 40px;
+    color: aliceblue;
+    border-bottom-color: brown;
+}

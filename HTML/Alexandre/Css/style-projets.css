@@ -1,0 +1,92 @@
+header{
+    background-image: url("../Img/banniere/info.jpeg");
+    background-size: cover;
+    width: auto;
+    height: 1100px;
+    
+    background-repeat: no-repeat;
+}
+#alex{
+    float: left;
+    width: 400px;
+    margin: 20px 80px;
+}
+#news{
+    float:right;
+    font-size: 24px;
+    margin: 50px 20px;
+    color: aliceblue;
+    border-bottom-color: brown;
+}
+.nav{
+    text-decoration: none;
+    color: aliceblue;
+    float: right;
+    font-size: 24px;
+    margin: 70px 40px;
+    
+}
+main{
+    height: 600px;
+}
+.proj:hover{
+    translate: -10px -10px;
+    height: 500px;
+}
+#mesp{
+    font-size: 32px;
+    text-align: center;
+    margin: 30px 0px;
+}
+.S2{
+    margin: 10px 300px ;
+}
+
+#projectarena{
+    height: 300px;
+    margin: 10px 300px;
+}
+
+
+footer{
+    height: 500px;
+    align-content: center;
+    align-items: center;
+    text-align-last: center;
+}
+.texta{
+    font-size: 20px;
+}
+
+#envoi{
+    color: aliceblue;
+    background-color: #3e8096;
+    font-size: 28px;
+    width: 150px;
+    margin: 20px 0px;
+}
+#envoi:hover{
+    color: #3e8096;
+    background-color: black;
+}
+
+#alexf{
+    float: left;
+    width: 200px;
+    margin: 70px 90px;
+}
+.navf{
+    text-decoration: none;
+    color: aliceblue;
+    float: right;
+    font-size: 14px;
+    margin: 70px 40px;
+    
+}
+#newsf{
+    float:right;
+    font-size: 14px;
+    margin: 70px 40px;
+    color: aliceblue;
+    border-bottom-color: brown;
+}

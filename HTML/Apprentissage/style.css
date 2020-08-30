@@ -1,0 +1,92 @@
+/*Pour faire une autre couleur quand on passe la souris dessus*/
+a:hover{
+    color: chartreuse;
+}
+#google-l:link{
+    color: steelblue;
+}
+b{
+    color: khaki;
+}
+.title{
+    color: chartreuse;
+    font-size: 40px;
+}
+/*Pour le premier first, pour le dernier last et pour les autes :nth-child(n) ou n est le nombre que l'on veut*/
+li:first-child{
+    color: cornflowerblue;
+}
+/* Pour selectionner tout les liens apres texte en h2 */
+h2 + a{
+    color: yellow;
+}
+/* Signifie on applique ce style sur tout les li compris dans le ul */
+ul > li{
+    color: crimson;
+}
+/* Permet de gerer les attributs d'un element particulier qui provient d'une classe/id */
+h2[class=subtitle]{
+    color: white;
+}
+#pacman{
+    border:1px solid yellow;
+    height: 200px;
+    width: 60%;
+    margin: 0px 40px;
+    float: right;
+    grid-row: 2px;
+    /* Flex Possibility */
+    /* flex-direction:row;
+    flex-wrap: wrap-reverse;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center; */
+}
+/* Utiliser une image comnme background */
+body{
+    background:url("https://previews.123rf.com/images/jeremynathan/jeremynathan1401/jeremynathan140102126/25240002-weed-la-marijuana-m%C3%A9dicale-grunge-d%C3%A9tail-et-contexte.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+/* Utiliser des pourcentages pour rendre les images responsive */
+/* Pour faire un degrade du rouge au bleu 
+body{
+    background:linear-gradient(to right,red,blue);
+}*/
+table{
+    align-content: center;
+}
+#spacex{
+    align-self: center;
+    height: 400 px;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 90px;
+}
+#btn{
+    background: blue;
+    padding: 10px 20px;
+    border: 1px blue;
+    transform: rotate(-45deg);
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 300ms;
+}
+#btn:hover{
+    background: cadetblue;
+    padding: 20px 30px;
+    text-decoration: underline;
+    transform: translate(30px,20px);
+
+}
+@keyframes translat-yolo{
+    from{
+        background: darkgreen;
+    }
+    to{
+        background: darksalmon;
+    }
+}
