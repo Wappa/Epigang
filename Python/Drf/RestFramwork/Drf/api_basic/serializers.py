@@ -5,3 +5,4 @@ class ArticleSerializer(serializers.ModelSerializer):
     class Meta:
         model = Article
         fields= ['id', 'title','author','email']
+        #fields = '__all__'                         le all utilise tout le model de models.py
